@@ -1,0 +1,23 @@
+<!-- placeholder for the side nav bar -->
+<div class="main-container">
+  <!-- placeholder for the header -->
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>
+
+<app-side-nav 
+  [sidenavTemplateRef]="navContent"
+  [navWidth]="280" 
+  [duration]="0.5"></app-side-nav>
+
+<div class="main-container">
+  <app-header></app-header>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>
+
+<ng-template #navContent>
+  Side Nav Bar Content Here
+</ng-template>
